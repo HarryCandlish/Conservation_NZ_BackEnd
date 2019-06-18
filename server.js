@@ -2,31 +2,28 @@ const express = require("express");
 
 const app = express();
 
-app.get(`/api/animals`, (req, res) => {
-  const animals = [
+app.get(`/api/stats`, (req, res) => {
+  const stats = [
     {
       id: 1,
-      type: "Kiwi",
-      location: "Upper North Island",
-      description: "Cannot fly",
-      conservation_status: "Endangered"
+      type: "Anxiety",
+      description: "Elavated Stress",
+      preventions: "Long walks"
     },
     {
       id: 2,
-      type: "Kea",
-      location: "South Island",
-      description: "Can fly",
-      conservation_status: "Common"
+      type: "Depression",
+      description: "Sadness",
+      preventions: "Meditation"
     },
     {
       id: 3,
-      type: "Moa",
-      location: "Bottom of South Island",
-      description: "was big",
-      conservation_status: "Extinct"
+      type: "Suicide",
+      description: "Commit suicide",
+      prevention: "Faith that things will get better"
     }
   ];
-  res.json(animals);
+  res.json(stats);
 });
 
 const port = 5000;
