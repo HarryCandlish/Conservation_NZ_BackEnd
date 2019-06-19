@@ -7,42 +7,48 @@ app.get(`/api/tshirts`, (req, res) => {
     {
       id: 1,
       type: "T-Shirt",
-      slogan: "'Hope and All...'",
+      color: "Black",
+      slogan: "'All is Well...'",
       price: "$20",
       size: "M, L, S"
     },
     {
       id: 2,
       type: "Longsleeve",
-      slogan: "'Nothing Init'",
+      color: "White",
+      slogan: "'All is Well...'",
       price: "$20",
       size: "M, L, S"
     },
     {
       id: 3,
       type: "T-Shirt",
-      slogan: "'Live with Ailments'",
+      color: "Red",
+      slogan: "'All is Well...'",
       price: "$20",
       size: "M, L, S"
     },
     {
       id: 4,
       type: "T-Shirt",
-      slogan: "'Ain't No Thing",
+      color: "White",
+      slogan: "'All is Well...",
       price: "$20",
       size: "M, L, S"
     },
     {
       id: 5,
-      type: "Longsleeve",
-      slogan: "'Love Just Love'",
+      type: "T-Shirt",
+      color: "Blue",
+      slogan: "'All is Well...",
       price: "$20",
       size: "M, L, S"
     },
     {
       id: 6,
       type: "Longsleeve",
-      slogan: "'All Is Well'",
+      color: "Black",
+      slogan: "'All is Well...",
       price: "$20",
       size: "M, L, S"
     }
