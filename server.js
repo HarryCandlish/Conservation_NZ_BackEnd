@@ -2,28 +2,31 @@ const express = require("express");
 
 const app = express();
 
-app.get(`/api/stats`, (req, res) => {
-  const stats = [
+app.get(`/api/events`, (req, res) => {
+  const events = [
     {
       id: 1,
-      type: "Anxiety",
-      description: "Elavated Stress",
-      preventions: "Long walks"
+      type: "Meetups",
+      description: "Meetups occur around the city",
+      location: "Wellington",
+      time: "25/6/2019"
     },
     {
       id: 2,
-      type: "Depression",
-      description: "Sadness",
-      preventions: "Meditation"
+      type: "Volunteer",
+      description: "Red Cross is looking for volunteers",
+      location: "Wellington",
+      time: "25/6/2019"
     },
     {
       id: 3,
-      type: "Suicide",
-      description: "Commit suicide",
-      prevention: "Faith that things will get better"
+      type: "Lecture",
+      description: "Lectures on the mental health crises",
+      location: "Wellington",
+      time: "25/6/2019"
     }
   ];
-  res.json(stats);
+  res.json(events);
 });
 
 const port = 5000;
