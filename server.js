@@ -2,31 +2,28 @@ const express = require("express");
 
 const app = express();
 
-app.get(`/api/events`, (req, res) => {
-  const events = [
+app.get(`/api/tshirts`, (req, res) => {
+  const tshirts = [
     {
       id: 1,
-      type: "Meetups",
-      description: "Meetups occur around the city",
-      location: "Wellington",
-      time: "25/6/2019"
+      type: "T-Shirt",
+      slogan: "'Hope and All - All that Jazz'",
+      price: "$20"
     },
     {
       id: 2,
-      type: "Volunteer",
-      description: "Red Cross is looking for volunteers",
-      location: "Wellington",
-      time: "25/6/2019"
+      type: "Longsleeve",
+      slogan: "'Nothing Init'",
+      price: "$20"
     },
     {
       id: 3,
-      type: "Lecture",
-      description: "Lectures on the mental health crises",
-      location: "Wellington",
-      time: "25/6/2019"
+      type: "T-Shirt",
+      slogan: "'Live with Your Ailments'",
+      price: "$20"
     }
   ];
-  res.json(events);
+  res.json(tshirts);
 });
 
 const port = 5000;
