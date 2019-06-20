@@ -7,6 +7,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "./public")));
 
-app.use("/api/v1/products", require("./routes/products"));
+app.use("/api/products", require("./routes/products"));
 
 module.exports = app;
