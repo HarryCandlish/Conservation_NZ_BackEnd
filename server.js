@@ -1,4 +1,5 @@
 const express = require("express");
+const knex = require("./knex/knex.js");
 
 const app = express();
 
