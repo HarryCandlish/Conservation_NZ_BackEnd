@@ -3,7 +3,7 @@ const knex = require("knex");
 
 function getProducts(testDb) {
   const db = testDb || connection;
-  return db(products).select();
+  return db("products").select();
 }
 
 module.exports = {
