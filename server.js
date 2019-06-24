@@ -9,5 +9,6 @@ app.use(express.static(path.join(__dirname, "./public")));
 
 app.use("/api/products", require("./routes/products"));
 app.use("/api/events", require("./routes/events"));
+app.use("/api/sampleproduct", require("./routes/sampleProduct"));
 
 module.exports = app;
