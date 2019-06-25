@@ -15,7 +15,7 @@ router.get("/", (req, res) => {
 
 router.get("/philosophy/:id", (req, res) => {
   const philosophyId = req.params.id;
-  getOneProduct(philosophyId)
+  getOnePhilosophy(philosophyId)
     .then(philosophy => {
       res.json(philosophy);
     })
