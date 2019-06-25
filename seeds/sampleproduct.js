@@ -11,7 +11,7 @@ exports.seed = function(knex, Promise) {
           designer: "K Norquay",
           details: "Cotton",
           description: "Eco friendly clothing designed and made in New Zealand",
-          image: "M, L, S"
+          image: "/tshirt.jpg"
         }
       ]);
     });
