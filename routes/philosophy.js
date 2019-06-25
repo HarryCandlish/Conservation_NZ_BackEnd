@@ -1,12 +1,12 @@
 const express = require("express");
 const router = express.Router();
 
-const { getPhilosophies, getOnePhilosophy } = require("../db/products");
+const { getPhilosophy, getOnePhilosophy } = require("../db/philosophy");
 
 router.get("/", (req, res) => {
-  getPhilosophies()
-    .then(philosophies => {
-      res.json(philosophies);
+  getPhilosophy()
+    .then(philosophy => {
+      res.json(philosophy);
     })
     .catch(err => {
       res.status(500).json({ error: "error" });

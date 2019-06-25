@@ -1,19 +1,19 @@
 const connection = require("./connection");
 const knex = require("knex");
 
-function getPhilosophies(testDb) {
+function getPhilosophy(testDb) {
   const db = testDb || connection;
-  return db("philosophies").select();
+  return db("philosophy").select();
 }
 
 function getOnePhilosophy(id, testDb) {
   const db = testDb || connection;
-  return db("philosophies")
+  return db("philosophy")
     .where("id", id)
     .first();
 }
 
 module.exports = {
-  getPhilosophies,
+  getPhilosophy,
   getOnePhilosophy
 };
