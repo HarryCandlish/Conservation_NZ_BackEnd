@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
 
-const { getPhilosophies, getOnePhilosophy } = require("../db/products");
+const { getPhilosophy, getOnePhilosophy } = require("../db/philosophy");
 
 router.get("/", (req, res) => {
-  getPhilosophies()
+  getPhilosophy()
     .then(philosophies => {
       res.json(philosophies);
     })
