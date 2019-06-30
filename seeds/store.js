@@ -9,7 +9,7 @@ exports.seed = function(knex, Promise) {
           id: 1,
           type: "T-Shirt",
           color: "Black",
-          image: "./tshirt",
+          image: "/tshirt.jpg",
           price: "$20",
           size: "M, L, S"
         },
@@ -17,7 +17,7 @@ exports.seed = function(knex, Promise) {
           id: 2,
           type: "Longsleeve",
           color: "White",
-          image: "./tshirt",
+          image: "/tshirt.jpg",
           price: "$20",
           size: "M, L, S"
         },
@@ -25,7 +25,7 @@ exports.seed = function(knex, Promise) {
           id: 3,
           type: "T-Shirt",
           color: "Red",
-          image: "./tshirt",
+          image: "/tshirt.jpg",
           price: "$20",
           size: "M, L, S"
         },
@@ -33,7 +33,7 @@ exports.seed = function(knex, Promise) {
           id: 4,
           type: "T-Shirt",
           color: "White",
-          image: "./tshirt",
+          image: "/tshirt.jpg",
           price: "$20",
           size: "M, L, S"
         },
@@ -41,7 +41,7 @@ exports.seed = function(knex, Promise) {
           id: 5,
           type: "T-Shirt",
           color: "Blue",
-          image: "./tshirt",
+          image: "/tshirt.jpg",
           price: "$20",
           size: "M, L, S"
         },
@@ -49,7 +49,7 @@ exports.seed = function(knex, Promise) {
           id: 6,
           type: "Longsleeve",
           color: "Black",
-          image: "./tshirt",
+          image: "/tshirt.jpg",
           price: "$20",
           size: "M, L, S"
         }
